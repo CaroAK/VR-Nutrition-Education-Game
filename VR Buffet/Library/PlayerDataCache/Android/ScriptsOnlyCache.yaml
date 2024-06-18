@@ -167,11 +167,12 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation.XRDeviceSimulatorSettings
     - UnityEngine.XR.Interaction.Toolkit.InteractionLayerSettings
     - UnityEngine.XR.Interaction.Toolkit.LocomotionSystem
+    - UnityEngine.XR.Interaction.Toolkit.XRDirectInteractor
+    - UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable
     - UnityEngine.XR.Interaction.Toolkit.XRInteractionManager
-    - UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual
-    - UnityEngine.XR.Interaction.Toolkit.XRRayInteractor
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
+    - UnityEditor.XR.Management.XRManagerSettingsEditor
     Unity.XR.Management.dll:
     - UnityEngine.XR.Management.XRGeneralSettings
     - UnityEngine.XR.Management.XRManagerSettings
@@ -258,13 +259,16 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.InputControlScheme
     - UnityEngine.InputSystem.InputControlScheme/DeviceRequirement
     Unity.XR.Interaction.Toolkit:
+    - UnityEngine.XR.Interaction.Toolkit.ActivateEvent
+    - UnityEngine.XR.Interaction.Toolkit.DeactivateEvent
+    - UnityEngine.XR.Interaction.Toolkit.FocusEnterEvent
+    - UnityEngine.XR.Interaction.Toolkit.FocusExitEvent
     - UnityEngine.XR.Interaction.Toolkit.HoverEnterEvent
     - UnityEngine.XR.Interaction.Toolkit.HoverExitEvent
     - UnityEngine.XR.Interaction.Toolkit.InteractionLayerMask
     - UnityEngine.XR.Interaction.Toolkit.SelectEnterEvent
     - UnityEngine.XR.Interaction.Toolkit.SelectExitEvent
-    - UnityEngine.XR.Interaction.Toolkit.UI.UIHoverEnterEvent
-    - UnityEngine.XR.Interaction.Toolkit.UI.UIHoverExitEvent
+    - UnityEngine.XR.Interaction.Toolkit.XRInteractableEvent
     - UnityEngine.XR.Interaction.Toolkit.XRInteractorEvent
     Unity.XR.OpenXR.Features.MetaQuestSupport:
     - UnityEngine.XR.OpenXR.Features.MetaQuestSupport.MetaQuestFeature/TargetDevice
@@ -293,6 +297,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 74
@@ -318,17 +324,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 20574}
     - Class: 114
-      Script: {instanceID: 21372}
-    - Class: 114
       Script: {instanceID: 21818}
     - Class: 114
       Script: {instanceID: 22040}
     - Class: 114
+      Script: {instanceID: 22042}
+    - Class: 114
       Script: {instanceID: 22744}
     - Class: 114
-      Script: {instanceID: 23560}
-    - Class: 114
       Script: {instanceID: 23780}
+    - Class: 114
+      Script: {instanceID: 25156}
     - Class: 114
       Script: {instanceID: 25440}
     - Class: 114
@@ -349,9 +355,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 40130}
     - Class: 115
       Script: {instanceID: 0}
-    - Class: 120
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 137
+      Script: {instanceID: 0}
+    - Class: 143
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
