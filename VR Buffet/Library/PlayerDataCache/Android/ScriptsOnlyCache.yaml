@@ -160,10 +160,13 @@ ScriptsOnlyBuild:
     Unity.XR.Interaction.Toolkit.Editor.dll:
     - UnityEditor.XR.Interaction.Toolkit.XRInteractionEditorSettings
     Unity.XR.Interaction.Toolkit.dll:
+    - UnityEngine.XR.Interaction.Toolkit.ActionBasedContinuousMoveProvider
+    - UnityEngine.XR.Interaction.Toolkit.ActionBasedContinuousTurnProvider
     - UnityEngine.XR.Interaction.Toolkit.ActionBasedController
     - UnityEngine.XR.Interaction.Toolkit.Inputs.InputActionManager
     - UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation.XRDeviceSimulatorSettings
     - UnityEngine.XR.Interaction.Toolkit.InteractionLayerSettings
+    - UnityEngine.XR.Interaction.Toolkit.LocomotionSystem
     - UnityEngine.XR.Interaction.Toolkit.XRInteractionManager
     - UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual
     - UnityEngine.XR.Interaction.Toolkit.XRRayInteractor
@@ -207,7 +210,6 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationBlendTree.Node
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
@@ -314,6 +316,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19068}
     - Class: 114
+      Script: {instanceID: 20574}
+    - Class: 114
       Script: {instanceID: 21372}
     - Class: 114
       Script: {instanceID: 21818}
@@ -332,9 +336,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 25586}
     - Class: 114
+      Script: {instanceID: 25866}
+    - Class: 114
       Script: {instanceID: 27256}
     - Class: 114
       Script: {instanceID: 27920}
+    - Class: 114
+      Script: {instanceID: 28900}
     - Class: 114
       Script: {instanceID: 29522}
     - Class: 114
