@@ -1,4 +1,4 @@
-#Mon Jun 17 20:05:32 EDT 2024
-base.0=/Users/carolineklein/VR Buffet/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/dex/release/mergeDexRelease/classes.dex
+#Mon Jun 17 23:45:14 EDT 2024
+base.0=/Users/carolineklein/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/dex/release/mergeDexRelease/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

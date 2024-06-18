@@ -15,3 +15,4 @@ string game_view_content_description
 style BaseUnityTheme
 style UnityThemeSelector
 style UnityThemeSelector_Translucent
+xml network_sec_config

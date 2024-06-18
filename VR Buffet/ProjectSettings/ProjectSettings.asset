@@ -8,7 +8,7 @@ PlayerSettings:
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 3
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
@@ -141,6 +141,7 @@ PlayerSettings:
   tvOSBundleVersion: 1.0
   bundleVersion: 0.1
   preloadedAssets:
+  - {fileID: 11400000, guid: 6488dc213a09b45d7adf7f4a4c277da4, type: 2}
   - {fileID: -1184226186899289184, guid: 6118c825633a64103bf265c8039bd6e4, type: 2}
   - {fileID: 11400000, guid: c7a1e2e627e8045118aa7df32974a521, type: 2}
   - {fileID: -3391874592368547926, guid: f29855b4a8b664e66b218ede8c6d23b2, type: 2}
@@ -173,7 +174,7 @@ PlayerSettings:
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 23
   AndroidTargetSdkVersion: 0
-  AndroidPreferredInstallLocation: 1
+  AndroidPreferredInstallLocation: 0
   aotOptions: 
   stripEngineCode: 1
   iPhoneStrippingLevel: 0

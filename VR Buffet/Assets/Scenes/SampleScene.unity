@@ -567,7 +567,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 0}
+  m_ModelPrefab: {fileID: 6503472651252357510, guid: f43af5c891653b8479bde9320e59e17d, type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -1274,6 +1274,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 91306064084566409, guid: 30832e25d451c954e9a5dcfa7f12c865, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 91306064084566409, guid: 30832e25d451c954e9a5dcfa7f12c865, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 91306064084566409, guid: 30832e25d451c954e9a5dcfa7f12c865, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 91306064084566409, guid: 30832e25d451c954e9a5dcfa7f12c865, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.7699251
       objectReference: {fileID: 0}
@@ -1492,6 +1504,18 @@ PrefabInstance:
     - target: {fileID: 5105961720922928936, guid: ab24dddddc3c63247a48df346dc6c17f, type: 3}
       propertyPath: m_Name
       value: SamhuiRestaurant_Diorama
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591172265831706002, guid: ab24dddddc3c63247a48df346dc6c17f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591172265831706002, guid: ab24dddddc3c63247a48df346dc6c17f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591172265831706002, guid: ab24dddddc3c63247a48df346dc6c17f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5591172265831706002, guid: ab24dddddc3c63247a48df346dc6c17f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1987,7 +2011,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 0}
+  m_ModelPrefab: {fileID: 7598929372368796659, guid: 624438fb9caa9304697d04d1c4176fa4, type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
