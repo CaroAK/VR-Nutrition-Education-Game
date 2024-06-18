@@ -1,0 +1,45 @@
+<libraries>
+  <library
+      name="/Users/carolineklein/VR Buffet/Library/Bee/Android/Prj/Mono2x/Gradle@@:unityLibrary::release"
+      jars="/Users/carolineklein/VR Buffet/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/.transforms/ae9477d2a35ddaf805fbd2e3f50024d3/transformed/out/jars/classes.jar:/Users/carolineklein/VR Buffet/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/.transforms/ae9477d2a35ddaf805fbd2e3f50024d3/transformed/out/jars/libs/unity-classes.jar"
+      resolved="Gradle:unityLibrary:unspecified"
+      folder="/Users/carolineklein/VR Buffet/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/.transforms/ae9477d2a35ddaf805fbd2e3f50024d3/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="__local_aars__:/Users/carolineklein/VR Buffet/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/libs/unity-classes.jar:unspecified@jar"
+      jars="/Users/carolineklein/VR Buffet/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/libs/unity-classes.jar"
+      resolved="__local_aars__:/Users/carolineklein/VR Buffet/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/libs/unity-classes.jar:unspecified"/>
+  <library
+      name=":OVRPlugin:@aar"
+      jars="/Users/carolineklein/.gradle/caches/transforms-3/416078b25b3d0bc27bb714f545f70279/transformed/OVRPlugin/jars/classes.jar"
+      resolved=":OVRPlugin:"
+      folder="/Users/carolineklein/.gradle/caches/transforms-3/416078b25b3d0bc27bb714f545f70279/transformed/OVRPlugin"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/carolineklein/VR Buffet/Library/Bee/Android/Prj/Mono2x/Gradle@@:unityLibrary:xrmanifest.androidlib::release"
+      jars="/Users/carolineklein/VR Buffet/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/xrmanifest.androidlib/build/.transforms/08e08b8087173cb69da75f0b07675737/transformed/out/jars/classes.jar"
+      resolved="Gradle.unityLibrary:xrmanifest.androidlib:unspecified"
+      folder="/Users/carolineklein/VR Buffet/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/xrmanifest.androidlib/build/.transforms/08e08b8087173cb69da75f0b07675737/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+</libraries>
