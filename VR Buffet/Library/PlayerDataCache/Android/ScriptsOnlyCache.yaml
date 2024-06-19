@@ -170,9 +170,10 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.XRDirectInteractor
     - UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable
     - UnityEngine.XR.Interaction.Toolkit.XRInteractionManager
+    - UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual
+    - UnityEngine.XR.Interaction.Toolkit.XRRayInteractor
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
-    - UnityEditor.XR.Management.XRManagerSettingsEditor
     Unity.XR.Management.dll:
     - UnityEngine.XR.Management.XRGeneralSettings
     - UnityEngine.XR.Management.XRManagerSettings
@@ -268,6 +269,8 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.InteractionLayerMask
     - UnityEngine.XR.Interaction.Toolkit.SelectEnterEvent
     - UnityEngine.XR.Interaction.Toolkit.SelectExitEvent
+    - UnityEngine.XR.Interaction.Toolkit.UI.UIHoverEnterEvent
+    - UnityEngine.XR.Interaction.Toolkit.UI.UIHoverExitEvent
     - UnityEngine.XR.Interaction.Toolkit.XRInteractableEvent
     - UnityEngine.XR.Interaction.Toolkit.XRInteractorEvent
     Unity.XR.OpenXR.Features.MetaQuestSupport:
@@ -318,19 +321,25 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 624}
+      Script: {instanceID: 622}
     - Class: 114
-      Script: {instanceID: 19068}
+      Script: {instanceID: 19066}
     - Class: 114
-      Script: {instanceID: 20574}
+      Script: {instanceID: 20572}
     - Class: 114
-      Script: {instanceID: 21818}
+      Script: {instanceID: 21370}
+    - Class: 114
+      Script: {instanceID: 21816}
+    - Class: 114
+      Script: {instanceID: 22038}
     - Class: 114
       Script: {instanceID: 22040}
     - Class: 114
-      Script: {instanceID: 22042}
+      Script: {instanceID: 22742}
     - Class: 114
-      Script: {instanceID: 22744}
+      Script: {instanceID: 22842}
+    - Class: 114
+      Script: {instanceID: 23560}
     - Class: 114
       Script: {instanceID: 23780}
     - Class: 114
@@ -351,9 +360,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 28900}
     - Class: 114
       Script: {instanceID: 29522}
-    - Class: 114
-      Script: {instanceID: 40130}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 120
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -2608,6 +2617,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.VR
     namespaceName: 
     className: OVRSceneAnchor
+  - hash:
+      serializedVersion: 2
+      Hash: 96086a20ae789554c000156ccb1cd24a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: HandAnimation
   - hash:
       serializedVersion: 2
       Hash: 62e9fc592fc9bc15cfc5af32815e77fc
@@ -5230,13 +5245,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 96086a20ae789554c000156ccb1cd24a
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: HandAnimation
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/carolineklein/VR Buffet/Test Hands (Buffet).apk
+  playerPath: /Users/carolineklein/VR Buffet/Test Hands (Buffet Reverted).apk
