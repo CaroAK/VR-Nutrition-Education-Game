@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - HandAnimation
+    - LabelScript
     Meta.XR.BuildingBlocks.Editor.dll:
     - Meta.XR.BuildingBlocks.Editor.BlockData
     - Meta.XR.BuildingBlocks.Editor.CameraRigBBBlockData
@@ -148,9 +149,18 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.XR.TrackedPoseDriver
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro:
+    - TMPro.TMP_ColorGradient
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
     Unity.TextMeshPro.dll:
     - TMPro.TMP_Dropdown
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
     Unity.XR.CoreUtils.dll:
     - Unity.XR.CoreUtils.XROrigin
@@ -167,6 +177,8 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation.XRDeviceSimulatorSettings
     - UnityEngine.XR.Interaction.Toolkit.InteractionLayerSettings
     - UnityEngine.XR.Interaction.Toolkit.LocomotionSystem
+    - UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster
+    - UnityEngine.XR.Interaction.Toolkit.UI.XRUIInputModule
     - UnityEngine.XR.Interaction.Toolkit.XRDirectInteractor
     - UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable
     - UnityEngine.XR.Interaction.Toolkit.XRInteractionManager
@@ -259,6 +271,21 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.InputBinding
     - UnityEngine.InputSystem.InputControlScheme
     - UnityEngine.InputSystem.InputControlScheme/DeviceRequirement
+    Unity.TextMeshPro:
+    - TMPro.FaceInfo_Legacy
+    - TMPro.FontAssetCreationSettings
+    - TMPro.KerningTable
+    - TMPro.TMP_Character
+    - TMPro.TMP_FontFeatureTable
+    - TMPro.TMP_FontWeightPair
+    - TMPro.TMP_GlyphAdjustmentRecord
+    - TMPro.TMP_GlyphPairAdjustmentRecord
+    - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_Sprite
+    - TMPro.TMP_SpriteCharacter
+    - TMPro.TMP_SpriteGlyph
+    - TMPro.TMP_Style
+    - TMPro.VertexGradient
     Unity.XR.Interaction.Toolkit:
     - UnityEngine.XR.Interaction.Toolkit.ActivateEvent
     - UnityEngine.XR.Interaction.Toolkit.DeactivateEvent
@@ -276,8 +303,29 @@ ScriptsOnlyBuild:
     Unity.XR.OpenXR.Features.MetaQuestSupport:
     - UnityEngine.XR.OpenXR.Features.MetaQuestSupport.MetaQuestFeature/TargetDevice
     UnityEngine.CoreModule:
+    - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
-  methodsToPreserve: []
+    - UnityEngine.Events.PersistentListenerMode
+    UnityEngine.TextCoreFontEngineModule:
+    - UnityEngine.TextCore.FaceInfo
+    - UnityEngine.TextCore.Glyph
+    - UnityEngine.TextCore.GlyphMetrics
+    - UnityEngine.TextCore.GlyphRect
+    UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
+    - UnityEngine.UI.FontData
+    - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.SpriteState
+  methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: LabelScript
+    methodName: Select
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -321,48 +369,80 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 622}
+      Script: {instanceID: 652}
     - Class: 114
-      Script: {instanceID: 19066}
+      Script: {instanceID: 16868}
     - Class: 114
-      Script: {instanceID: 20572}
+      Script: {instanceID: 16880}
     - Class: 114
-      Script: {instanceID: 21370}
+      Script: {instanceID: 16924}
     - Class: 114
-      Script: {instanceID: 21816}
+      Script: {instanceID: 18414}
     - Class: 114
-      Script: {instanceID: 22038}
+      Script: {instanceID: 19106}
     - Class: 114
-      Script: {instanceID: 22040}
+      Script: {instanceID: 19428}
     - Class: 114
-      Script: {instanceID: 22742}
+      Script: {instanceID: 20626}
     - Class: 114
-      Script: {instanceID: 22842}
+      Script: {instanceID: 21176}
     - Class: 114
-      Script: {instanceID: 23560}
+      Script: {instanceID: 21426}
     - Class: 114
-      Script: {instanceID: 23780}
+      Script: {instanceID: 21872}
     - Class: 114
-      Script: {instanceID: 25156}
+      Script: {instanceID: 22096}
     - Class: 114
-      Script: {instanceID: 25440}
+      Script: {instanceID: 22098}
     - Class: 114
-      Script: {instanceID: 25444}
+      Script: {instanceID: 22802}
     - Class: 114
-      Script: {instanceID: 25586}
+      Script: {instanceID: 22906}
     - Class: 114
-      Script: {instanceID: 25866}
+      Script: {instanceID: 23632}
     - Class: 114
-      Script: {instanceID: 27256}
+      Script: {instanceID: 23854}
     - Class: 114
-      Script: {instanceID: 27920}
+      Script: {instanceID: 23926}
     - Class: 114
-      Script: {instanceID: 28900}
+      Script: {instanceID: 24370}
     - Class: 114
-      Script: {instanceID: 29522}
+      Script: {instanceID: 24550}
+    - Class: 114
+      Script: {instanceID: 25234}
+    - Class: 114
+      Script: {instanceID: 25518}
+    - Class: 114
+      Script: {instanceID: 25522}
+    - Class: 114
+      Script: {instanceID: 25666}
+    - Class: 114
+      Script: {instanceID: 25820}
+    - Class: 114
+      Script: {instanceID: 25946}
+    - Class: 114
+      Script: {instanceID: 26120}
+    - Class: 114
+      Script: {instanceID: 26498}
+    - Class: 114
+      Script: {instanceID: 26854}
+    - Class: 114
+      Script: {instanceID: 27344}
+    - Class: 114
+      Script: {instanceID: 28012}
+    - Class: 114
+      Script: {instanceID: 28998}
+    - Class: 114
+      Script: {instanceID: 29506}
+    - Class: 114
+      Script: {instanceID: 29622}
+    - Class: 114
+      Script: {instanceID: 38848}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -378,6 +458,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
   scriptHashData:
   - hash:
       serializedVersion: 2
@@ -385,6 +471,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit
     className: ActionBasedController
+  - hash:
+      serializedVersion: 2
+      Hash: d41ab9b5ea92474f9c0a6937a0607ce1
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: ContentSizeFitter
   - hash:
       serializedVersion: 2
       Hash: 540882762544409cc4530e60db00e951
@@ -801,6 +893,12 @@ ScriptsOnlyBuild:
     className: PlayerLocomotor
   - hash:
       serializedVersion: 2
+      Hash: ed8bac09ffacadca9994789e381c69ce
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: TMP_TextSelector_A
+  - hash:
+      serializedVersion: 2
       Hash: a2ce24849ca0ba9ad48424f15f6d8841
     assemblyName: Meta.XR.MultiplayerBlocks.Shared
     namespaceName: Meta.XR.MultiplayerBlocks.Shared
@@ -955,6 +1053,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction.Surfaces
     className: PhysicsLayerSurface
+  - hash:
+      serializedVersion: 2
+      Hash: 1d830bc5cfaaf24301dffea2877f4bea
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: VertexShakeA
   - hash:
       serializedVersion: 2
       Hash: 1e123a49f0d24fa3d95a3c9dc70d192e
@@ -1113,6 +1217,12 @@ ScriptsOnlyBuild:
     className: ReticleGhostDrawer
   - hash:
       serializedVersion: 2
+      Hash: 418b67019f13f9684552f2693bae3971
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: TextMeshProFloatingText
+  - hash:
+      serializedVersion: 2
       Hash: 731480b83236435ed9fb94ca37cf5283
     assemblyName: Unity.XR.Management
     namespaceName: UnityEngine.XR.Management
@@ -1209,6 +1319,12 @@ ScriptsOnlyBuild:
     className: OVRSemanticClassification
   - hash:
       serializedVersion: 2
+      Hash: 72561d2e822b466169cd12a3b9f9ae0c
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: VertexShakeB
+  - hash:
+      serializedVersion: 2
       Hash: 9f82f286de9721a4f0377b1691387df2
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction.Surfaces
@@ -1279,6 +1395,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction
     className: InteractableUnityEventWrapper
+  - hash:
+      serializedVersion: 2
+      Hash: 1deda86fe7ffd8587afcfe68a02d034c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EnvMapAnimator
   - hash:
       serializedVersion: 2
       Hash: 95426d463074947dcbffc797c44e779c
@@ -1395,6 +1517,12 @@ ScriptsOnlyBuild:
     className: MetaXRAudioSource
   - hash:
       serializedVersion: 2
+      Hash: e416782d95a812c5b5b00e9b103a8e94
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: CameraController
+  - hash:
+      serializedVersion: 2
       Hash: 1b5a69e7e7785b1f2e2e9b95ba2e37cc
     assemblyName: Meta.XR.MultiplayerBlocks.Shared
     namespaceName: Meta.XR.MultiplayerBlocks.Colocation
@@ -1491,16 +1619,34 @@ ScriptsOnlyBuild:
     className: UnityOnCancelMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 52840a82fb83b3a7df342e354c4815e4
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: TMPro_InstructionOverlay
+  - hash:
+      serializedVersion: 2
       Hash: 80667cfa9def3f06d118e18f4fbef449
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction
     className: HandPokeOvershootGlow
   - hash:
       serializedVersion: 2
+      Hash: a75a568ce902366f4e82fc98ca6108f5
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: TMP_ExampleScript_01
+  - hash:
+      serializedVersion: 2
       Hash: 68201811ff1e953cc40d8d31330f9f55
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction
     className: Axis1DPrioritySelector
+  - hash:
+      serializedVersion: 2
+      Hash: dc31d211c7459841fe4f406ae2e51480
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: TextConsoleSimulator
   - hash:
       serializedVersion: 2
       Hash: e28bd3d8b4af39fe451cd8af9417bb16
@@ -1537,6 +1683,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction
     className: SecondaryInteractorConnection
+  - hash:
+      serializedVersion: 2
+      Hash: aa349b22cd61b9e8488d736f82590d6b
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: TMP_TextInfoDebugTool
   - hash:
       serializedVersion: 2
       Hash: 393c1ca6687f3fb3fb92656a0fd50807
@@ -1809,6 +1961,12 @@ ScriptsOnlyBuild:
     className: DynamicEntityProvider
   - hash:
       serializedVersion: 2
+      Hash: 0dd14e314956b0d0d83ffcffe60aa46f
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro
+    className: TMP_DigitValidator
+  - hash:
+      serializedVersion: 2
       Hash: f89c7e73a356b200b591489fbb65289b
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction.PoseDetection.Debug
@@ -1957,6 +2115,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.VR
     namespaceName: 
     className: OVRTrackedKeyboardSampleControls
+  - hash:
+      serializedVersion: 2
+      Hash: 4166580c620718548959a77fa7b43fc1
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: TextMeshSpawner
   - hash:
       serializedVersion: 2
       Hash: d54d328eb5e000996bf7454135cd2ad3
@@ -2259,6 +2423,12 @@ ScriptsOnlyBuild:
     className: LocomotionAxisTurnerInteractor
   - hash:
       serializedVersion: 2
+      Hash: 8668b70b18eb7f5cd2dce04386848007
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: VertexJitter
+  - hash:
+      serializedVersion: 2
       Hash: d33fbcfad4a49ca0b4894221a7a307e8
     assemblyName: Unity.XR.OpenXR.Features.MetaQuestSupport
     namespaceName: UnityEngine.XR.OpenXR.Features.MetaQuestSupport
@@ -2335,6 +2505,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction.Grab.GrabSurfaces
     className: CylinderGrabSurface
+  - hash:
+      serializedVersion: 2
+      Hash: 04f2d6a4db8a670aeb2c87d9ffd08865
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro
+    className: TMP_TextEventHandler
   - hash:
       serializedVersion: 2
       Hash: 2047cb748a8018ddd7f95a497435a1f2
@@ -2589,6 +2765,12 @@ ScriptsOnlyBuild:
     className: Variables
   - hash:
       serializedVersion: 2
+      Hash: 502a0d788634601faaefeacfda55e23a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DropdownSample
+  - hash:
+      serializedVersion: 2
       Hash: 4ea08c1a31e4ed0b851adb0d6d9feb16
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction
@@ -2601,16 +2783,22 @@ ScriptsOnlyBuild:
     className: StateMachine
   - hash:
       serializedVersion: 2
-      Hash: f324769bd3564b217a0b7ba8e39a026d
-    assemblyName: Unity.XR.Interaction.Toolkit
-    namespaceName: UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation
-    className: XRDeviceSimulator
+      Hash: c4de0ff7e075dd89c9fed5913dd775d2
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro
+    className: TMP_PhoneNumberValidator
   - hash:
       serializedVersion: 2
       Hash: fb91b0f531b5adecb53c856ab1c2f0aa
     assemblyName: Unity.Postprocessing.Runtime
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: LensDistortion
+  - hash:
+      serializedVersion: 2
+      Hash: f324769bd3564b217a0b7ba8e39a026d
+    assemblyName: Unity.XR.Interaction.Toolkit
+    namespaceName: UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation
+    className: XRDeviceSimulator
   - hash:
       serializedVersion: 2
       Hash: b21b76b22ade4017129604d887a9986d
@@ -2629,6 +2817,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.OpenXR
     namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
     className: EyeGazeInteraction
+  - hash:
+      serializedVersion: 2
+      Hash: c4ae0ec287bc3cde0bc98e1a65f9cef7
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: VertexColorCycler
   - hash:
       serializedVersion: 2
       Hash: 343ed37973244746454575f422fc7dc8
@@ -2677,6 +2871,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit
     className: XRInteractableSnapVolume
+  - hash:
+      serializedVersion: 2
+      Hash: 9eccc4340fcd994586e0dcb134c4612e
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: TeleType
   - hash:
       serializedVersion: 2
       Hash: 3ef23b0b074316582b6e8caa601934dc
@@ -2743,6 +2943,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseEnterMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 216f6c07bfa250e44b3e8d62572474e8
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: Benchmark01
   - hash:
       serializedVersion: 2
       Hash: 4fcf0bb4aff1d14a1dfcdedc4b07bd05
@@ -2847,6 +3053,12 @@ ScriptsOnlyBuild:
     className: TTSDiskCache
   - hash:
       serializedVersion: 2
+      Hash: d0caa48b5fe6778ce3f0de7aec45c4e6
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: SkewTextExample
+  - hash:
+      serializedVersion: 2
       Hash: ed8e62f07ec878233f5493a335003493
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.UI
@@ -2887,6 +3099,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit
     className: XRInteractorLineVisual
+  - hash:
+      serializedVersion: 2
+      Hash: 11a492830b189fafb9ed2f7afa464c56
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: SimpleScript
   - hash:
       serializedVersion: 2
       Hash: 2e156dcc4125474cfe79f7c5395ac3b0
@@ -3105,6 +3323,12 @@ ScriptsOnlyBuild:
     className: DynamicEntityKeywordRegistry
   - hash:
       serializedVersion: 2
+      Hash: c9b1ea3bf987a2e780a24849503ca72e
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: Benchmark01_UGUI
+  - hash:
+      serializedVersion: 2
       Hash: 3972772e789b6e32862cc8b1f9895b43
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction.Body.Input
@@ -3309,6 +3533,12 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: 593a641cd7822a10b9a54aa9eb5c3d5e
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: Benchmark04
+  - hash:
+      serializedVersion: 2
       Hash: b58bff8f1d853885ababdc1267e9589d
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit.Filtering
@@ -3349,12 +3579,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTransformParentChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: d41ab9b5ea92474f9c0a6937a0607ce1
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: ContentSizeFitter
   - hash:
       serializedVersion: 2
       Hash: 638217bdb4c3c785548bb6f30015afeb
@@ -3439,6 +3663,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit
     className: ClimbInteractable
+  - hash:
+      serializedVersion: 2
+      Hash: d3bece132a2b48e63d78047dece48ba7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ChatController
   - hash:
       serializedVersion: 2
       Hash: cf32d98954e63b8e30e9334b152e9b8e
@@ -3595,6 +3825,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction
     className: HandWristOffset
+  - hash:
+      serializedVersion: 2
+      Hash: 665da785348a8806bf1524fe10742a60
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: TMP_UiFrameRateCounter
   - hash:
       serializedVersion: 2
       Hash: 3f04cc0700923c2d815479050925a9c6
@@ -3837,6 +4073,12 @@ ScriptsOnlyBuild:
     className: InputSystemObject
   - hash:
       serializedVersion: 2
+      Hash: 5a1710e1ce9ddf5eb06e0d2693171f49
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: ObjectSpin
+  - hash:
+      serializedVersion: 2
       Hash: e34a2bf62ae5e17a9c6062787cfffbdb
     assemblyName: Unity.XR.OpenXR
     namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
@@ -3907,6 +4149,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit.UI
     className: XRUIInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: ceeb6c51b89f022a3deb7b3408c66745
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: TMP_TextEventCheck
   - hash:
       serializedVersion: 2
       Hash: aebd593fcabd447a2a1d7c2a9127fc87
@@ -3999,6 +4247,12 @@ ScriptsOnlyBuild:
     className: OVRRayHelper
   - hash:
       serializedVersion: 2
+      Hash: ab3d19695db8289414a06e6d45fd6c8e
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: ShaderPropAnimator
+  - hash:
+      serializedVersion: 2
       Hash: 9e03f00b8d247ae698279d76be67b372
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction
@@ -4063,6 +4317,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction
     className: DotGridProperties
+  - hash:
+      serializedVersion: 2
+      Hash: 1981decccddfde3e97fcfd6689332a6f
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: WarpTextExample
   - hash:
       serializedVersion: 2
       Hash: fba8d45c22ce65e8b6469a970527958c
@@ -4257,6 +4517,12 @@ ScriptsOnlyBuild:
     className: InputActionManager
   - hash:
       serializedVersion: 2
+      Hash: 35e0b31791c377513b6fc7b9568c50cd
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: Benchmark02
+  - hash:
+      serializedVersion: 2
       Hash: 9da90bb3fdb872d0e71bc9a85faee76c
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction
@@ -4449,6 +4715,12 @@ ScriptsOnlyBuild:
     className: IntDatum
   - hash:
       serializedVersion: 2
+      Hash: fc0a9a681d29388386a9abf3f08b024a
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: Benchmark03
+  - hash:
+      serializedVersion: 2
       Hash: 31ba3ec34b493ae298e4c3e6cf4a3f8c
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction.HandGrab
@@ -4639,6 +4911,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.Editor
     className: InputActionAssetEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 7fdd3ee28e9042c3ec83463d0bb3b230
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: TMP_FrameRateCounter
   - hash:
       serializedVersion: 2
       Hash: df10a1944994830420f35d639e1830b0
@@ -4867,6 +5145,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.Interaction
     namespaceName: Oculus.Interaction.PoseDetection
     className: Sequence
+  - hash:
+      serializedVersion: 2
+      Hash: e2734bcc7b3e94776ade5d59f54fec1e
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: TMP_TextSelector_B
   - hash:
       serializedVersion: 2
       Hash: e68e0a06099e7be63955f8547029097b
@@ -5121,6 +5405,12 @@ ScriptsOnlyBuild:
     className: HierarchySimplifier
   - hash:
       serializedVersion: 2
+      Hash: 9fb1c3ab48b256d508ecddd967f98652
+    assemblyName: Assembly-CSharp
+    namespaceName: TMPro.Examples
+    className: VertexZoom
+  - hash:
+      serializedVersion: 2
       Hash: fe21b1e29177d9a5806239da78614e83
     assemblyName: Meta.Wit.Dictation
     namespaceName: Meta.WitAi.Dictation
@@ -5245,6 +5535,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 4c86f53c8d260a48de7d3a06a7a4dda5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LabelScript
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
