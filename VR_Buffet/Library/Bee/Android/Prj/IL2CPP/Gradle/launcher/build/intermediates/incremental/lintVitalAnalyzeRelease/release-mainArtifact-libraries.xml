@@ -1,0 +1,107 @@
+<libraries>
+  <library
+      name="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle@@:unityLibrary::release"
+      jars="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/.transforms/a78fec10fed821823bfe8d852f1d63cf/transformed/out/jars/classes.jar:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/.transforms/a78fec10fed821823bfe8d852f1d63cf/transformed/out/jars/libs/assistant_sdk_aidl.jar:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/.transforms/a78fec10fed821823bfe8d852f1d63cf/transformed/out/jars/libs/assistant_sdk_core.jar:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/.transforms/a78fec10fed821823bfe8d852f1d63cf/transformed/out/jars/libs/assistant_sdk_unity.jar:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/.transforms/a78fec10fed821823bfe8d852f1d63cf/transformed/out/jars/libs/assistant_sdk_voicecommand_unity.jar:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/.transforms/a78fec10fed821823bfe8d852f1d63cf/transformed/out/jars/libs/assistant_sdk_voicecommands.jar:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/.transforms/a78fec10fed821823bfe8d852f1d63cf/transformed/out/jars/libs/unity-classes.jar:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/.transforms/a78fec10fed821823bfe8d852f1d63cf/transformed/out/jars/libs/voicesdk_core.jar:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/.transforms/a78fec10fed821823bfe8d852f1d63cf/transformed/out/jars/libs/voicesdk_platform_dictation.jar:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/.transforms/a78fec10fed821823bfe8d852f1d63cf/transformed/out/jars/libs/voicesdk_platform_logger.jar:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/.transforms/a78fec10fed821823bfe8d852f1d63cf/transformed/out/jars/libs/voicesdk_unity.jar"
+      resolved="Gradle:unityLibrary:unspecified"
+      folder="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/.transforms/a78fec10fed821823bfe8d852f1d63cf/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/voicesdk_unity.jar:unspecified@jar"
+      jars="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/voicesdk_unity.jar"
+      resolved="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/voicesdk_unity.jar:unspecified"/>
+  <library
+      name="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/assistant_sdk_aidl.jar:unspecified@jar"
+      jars="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/assistant_sdk_aidl.jar"
+      resolved="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/assistant_sdk_aidl.jar:unspecified"/>
+  <library
+      name="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/unity-classes.jar:unspecified@jar"
+      jars="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/unity-classes.jar"
+      resolved="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/unity-classes.jar:unspecified"/>
+  <library
+      name="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/voicesdk_core.jar:unspecified@jar"
+      jars="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/voicesdk_core.jar"
+      resolved="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/voicesdk_core.jar:unspecified"/>
+  <library
+      name="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/assistant_sdk_core.jar:unspecified@jar"
+      jars="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/assistant_sdk_core.jar"
+      resolved="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/assistant_sdk_core.jar:unspecified"/>
+  <library
+      name="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/voicesdk_platform_logger.jar:unspecified@jar"
+      jars="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/voicesdk_platform_logger.jar"
+      resolved="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/voicesdk_platform_logger.jar:unspecified"/>
+  <library
+      name="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/assistant_sdk_voicecommand_unity.jar:unspecified@jar"
+      jars="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/assistant_sdk_voicecommand_unity.jar"
+      resolved="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/assistant_sdk_voicecommand_unity.jar:unspecified"/>
+  <library
+      name="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/voicesdk_platform_dictation.jar:unspecified@jar"
+      jars="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/voicesdk_platform_dictation.jar"
+      resolved="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/voicesdk_platform_dictation.jar:unspecified"/>
+  <library
+      name="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/assistant_sdk_unity.jar:unspecified@jar"
+      jars="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/assistant_sdk_unity.jar"
+      resolved="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/assistant_sdk_unity.jar:unspecified"/>
+  <library
+      name="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/assistant_sdk_voicecommands.jar:unspecified@jar"
+      jars="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/assistant_sdk_voicecommands.jar"
+      resolved="__local_aars__:/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/assistant_sdk_voicecommands.jar:unspecified"/>
+  <library
+      name=":InteractionSdk:@aar"
+      jars="/Users/carolineklein/.gradle/caches/transforms-3/1f858877613b3cd8d1242adf80c1b868/transformed/InteractionSdk/jars/classes.jar"
+      resolved=":InteractionSdk:"
+      folder="/Users/carolineklein/.gradle/caches/transforms-3/1f858877613b3cd8d1242adf80c1b868/transformed/InteractionSdk"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name=":SDKTelemetry:@aar"
+      jars="/Users/carolineklein/.gradle/caches/transforms-3/cde6657896cdbdacf9f5f8e7430ef1b4/transformed/SDKTelemetry/jars/classes.jar"
+      resolved=":SDKTelemetry:"
+      folder="/Users/carolineklein/.gradle/caches/transforms-3/cde6657896cdbdacf9f5f8e7430ef1b4/transformed/SDKTelemetry"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name=":OVRPlugin:@aar"
+      jars="/Users/carolineklein/.gradle/caches/transforms-3/4dc8888ec270eda9fe2c31d568aecbe3/transformed/OVRPlugin/jars/classes.jar"
+      resolved=":OVRPlugin:"
+      folder="/Users/carolineklein/.gradle/caches/transforms-3/4dc8888ec270eda9fe2c31d568aecbe3/transformed/OVRPlugin"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle@@:unityLibrary:xrmanifest.androidlib::release"
+      jars="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/xrmanifest.androidlib/build/.transforms/152c1ef6aa1b6253b103c33edac21a70/transformed/out/jars/classes.jar"
+      resolved="Gradle.unityLibrary:xrmanifest.androidlib:unspecified"
+      folder="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/xrmanifest.androidlib/build/.transforms/152c1ef6aa1b6253b103c33edac21a70/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+</libraries>

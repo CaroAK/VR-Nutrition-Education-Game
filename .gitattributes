@@ -1,2 +1,12 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+VR filter=lfs diff=lfs merge=lfs -text
+Buffet/Library/Bee/Android/d8kzr/libil2cpp.so filter=lfs diff=lfs merge=lfs -text
+Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/xrmanifest.androidlib/build/intermediates/local_aar_for_lint/release/out.aar filter=lfs diff=lfs merge=lfs -text
+Buffet/Library/Bee/artifacts/Android/il2cppOutput/build/arm64-v8a/libil2cpp.dbg.so filter=lfs diff=lfs merge=lfs -text
+Buffet/Library/Bee/artifacts/objcopy_5mlmi/libil2cpp.dbg.so filter=lfs diff=lfs merge=lfs -text
+VR_Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/local_aar_for_lint/release/out.aar filter=lfs diff=lfs merge=lfs -text
+VR_Buffer/Library/Bee/artifacts/Android/d8kzr/libil2cpp.so filter=lfs diff=lfs merge=lfs -text
+VR_Buffet/Library/Bee/artifacts/Android/il2cppOutput/build/arm64-v8a/libil2cpp.dbg.so filter=lfs diff=lfs merge=lfs -text
+VR_Buffet/Library/Bee/artifacts/objcopy_5lmi/libil2cpp.dbg.so filter=lfs diff=lfs merge=lfs -text
+VR_Buffet/Library/Bee/artifacts/Android/d8kzr/libil2cpp.so filter=lfs diff=lfs merge=lfs -text
