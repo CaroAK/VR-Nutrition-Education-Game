@@ -1,6 +1,6 @@
 <lint-module
     format="1"
-    dir="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher"
+    dir="/Users/carolineklein/VR Buffet Reverted/VR-Nutrition-Education-Game/VR_Buffet/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher"
     name=":launcher"
     type="APP"
     maven="Gradle:launcher:"

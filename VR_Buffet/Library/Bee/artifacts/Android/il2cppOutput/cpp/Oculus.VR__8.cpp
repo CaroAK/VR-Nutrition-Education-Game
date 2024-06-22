@@ -1310,7 +1310,6 @@ struct OVRProfilerScope_tDD980BA4538FDE4C0ECF8547F7E11D2B73EA02CC
 };
 struct PropertyAttribute_t5E0CB5A6CDA6E24CBD4FF26DE3B0C29D8BB54BF0  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
-	int32_t ___U3CorderU3Ek__BackingField;
 };
 struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 
 {
@@ -7798,7 +7797,7 @@ IL_0093_2:
 						L_32 = TcpClient_GetStream_mDD54336B17D1267BD593E0A1EB9EDF3E9506AEBA(L_31, NULL);
 						NullCheck(L_27);
 						RuntimeObject* L_33;
-						L_33 = VirtualFuncInvoker5< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*, RuntimeObject* >::Invoke(26, L_27, L_28, 0, ((int32_t)(((RuntimeArray*)L_29)->max_length)), L_30, L_32);
+						L_33 = VirtualFuncInvoker5< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*, RuntimeObject* >::Invoke(18, L_27, L_28, 0, ((int32_t)(((RuntimeArray*)L_29)->max_length)), L_30, L_32);
 						goto IL_00fd_2;
 					}
 					catch(Il2CppExceptionWrapper& e)
@@ -7831,7 +7830,7 @@ CATCH_00cc_2:
 						NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0* L_40;
 						L_40 = TcpClient_GetStream_mDD54336B17D1267BD593E0A1EB9EDF3E9506AEBA(L_39, NULL);
 						NullCheck(L_40);
-						VirtualActionInvoker0::Invoke(18, L_40);
+						VirtualActionInvoker0::Invoke(13, L_40);
 						TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* L_41 = V_6;
 						NullCheck(L_41);
 						TcpClient_Close_m03E0ED4E4BA87B3F1ED17585AB1327ED76F5FE89(L_41, NULL);
@@ -7885,7 +7884,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRNetworkTcpServer_DoWriteDataCallback_
 		L_1 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(2, IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5_il2cpp_TypeInfo_var, L_0);
 		RuntimeObject* L_2 = ___0_ar;
 		NullCheck(((NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0*)IsInstClass((RuntimeObject*)L_1, NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0_il2cpp_TypeInfo_var)));
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(27, ((NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0*)IsInstClass((RuntimeObject*)L_1, NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0_il2cpp_TypeInfo_var)), L_2);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(19, ((NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0*)IsInstClass((RuntimeObject*)L_1, NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0_il2cpp_TypeInfo_var)), L_2);
 		return;
 	}
 }
@@ -8161,7 +8160,7 @@ IL_0020:
 		NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0* L_4;
 		L_4 = TcpClient_GetStream_mDD54336B17D1267BD593E0A1EB9EDF3E9506AEBA(L_3, NULL);
 		NullCheck(L_4);
-		VirtualActionInvoker0::Invoke(18, L_4);
+		VirtualActionInvoker0::Invoke(13, L_4);
 		TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* L_5 = __this->___tcpClient;
 		NullCheck(L_5);
 		TcpClient_Close_m03E0ED4E4BA87B3F1ED17585AB1327ED76F5FE89(L_5, NULL);
@@ -8277,7 +8276,7 @@ IL_0016:
 		L_7 = TcpClient_GetStream_mDD54336B17D1267BD593E0A1EB9EDF3E9506AEBA(L_6, NULL);
 		NullCheck(L_7);
 		bool L_8;
-		L_8 = VirtualFuncInvoker0< bool >::Invoke(37, L_7);
+		L_8 = VirtualFuncInvoker0< bool >::Invoke(27, L_7);
 		if (!L_8)
 		{
 			goto IL_00b0;
@@ -8324,7 +8323,7 @@ IL_005b:
 		L_23 = TcpClient_GetStream_mDD54336B17D1267BD593E0A1EB9EDF3E9506AEBA(L_22, NULL);
 		NullCheck(L_14);
 		RuntimeObject* L_24;
-		L_24 = VirtualFuncInvoker5< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*, RuntimeObject* >::Invoke(22, L_14, L_18, L_19, L_20, L_21, L_23);
+		L_24 = VirtualFuncInvoker5< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*, RuntimeObject* >::Invoke(16, L_14, L_18, L_19, L_20, L_21, L_23);
 	}
 
 IL_00b0:
@@ -8368,7 +8367,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRNetworkTcpClient_OnReadDataCallback_m
 			RuntimeObject* L_3 = ___0_ar;
 			NullCheck(L_2);
 			int32_t L_4;
-			L_4 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(23, L_2, L_3);
+			L_4 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(17, L_2, L_3);
 			V_1 = L_4;
 			int32_t L_5 = __this->___receivedBufferDataSize;
 			int32_t L_6 = V_1;
@@ -23397,7 +23396,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRSystemPerfMetricsTcpServer_Update_m1D
 		String_t* L_5 = V_0;
 		NullCheck(L_4);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6;
-		L_6 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17, L_4, L_5);
+		L_6 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(16, L_4, L_5);
 		V_1 = L_6;
 		OVRNetworkTcpServer_t8ED20F58D0A2F70B6A84AA3B06787D540A5964C0* L_7 = __this->___tcpServer;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_8 = V_1;

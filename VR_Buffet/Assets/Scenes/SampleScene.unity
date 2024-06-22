@@ -2723,6 +2723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 969610084}
+  confetti: {fileID: 1985308838}
 --- !u!1 &1489482454
 GameObject:
   m_ObjectHideFlags: 0
@@ -4024,14 +4025,13 @@ GameObject:
   - component: {fileID: 1985308839}
   - component: {fileID: 1985308838}
   - component: {fileID: 1985308837}
-  - component: {fileID: 1985308840}
   m_Layer: 0
   m_Name: Confetti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1985308837
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -4123,7 +4123,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -8902,18 +8902,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1370639142}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1985308840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985308836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ed9cc016ffa9423898201a0a6228f48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2089110258
 GameObject:
   m_ObjectHideFlags: 0
@@ -9555,6 +9543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 1189762169}
+  confetti: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -6329,7 +6329,7 @@ IL_0045:
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_9 = L_8.___EventData;
 		NullCheck(L_7);
 		String_t* L_10;
-		L_10 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(34, L_7, L_9);
+		L_10 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33, L_7, L_9);
 		NullCheck(L_10);
 		String_t* L_11;
 		L_11 = String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166(L_10, _stringLiteral1489F923C4DCA729178B3E3233458550D8DDDF29, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, NULL);
@@ -10366,11 +10366,11 @@ IL_020c_1:
 					V_3 = L_19;
 					NullCheck(L_17);
 					String_t* L_20;
-					L_20 = VirtualFuncInvoker0< String_t* >::Invoke(13, L_17);
+					L_20 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_17);
 					StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B* L_21 = V_3;
 					NullCheck(L_21);
 					String_t* L_22;
-					L_22 = VirtualFuncInvoker0< String_t* >::Invoke(13, L_21);
+					L_22 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_21);
 					String_t* L_23;
 					L_23 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_20, L_22, NULL);
 					V_4 = L_23;

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PointBar : MonoBehaviour
 {
     public Slider slider;
+    [SerializeField] private ParticleSystem confetti;
 
     public void SetMaxPoints(int points)
     {
@@ -21,5 +22,22 @@ public class PointBar : MonoBehaviour
     public void AddPoints(int points)
     {
         slider.value = slider.value + points;
+
+        if (confetti != null)
+        {
+            StartCoroutine(CelebratePoints());
+        }
+    }
+
+    private IEnumerator CelebratePoints()
+    {
+        confetti.gameObject.SetActive(true);
+        confetti.Play();
+
+        // Wait for the duration of the particle system's main duration or a fixed time
+        yield return new WaitForSeconds(confetti.main.duration);
+
+        confetti.Stop();
+        confetti.gameObject.SetActive(false);
     }
 }
