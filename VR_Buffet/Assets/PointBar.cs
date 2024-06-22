@@ -19,8 +19,9 @@ public class PointBar : MonoBehaviour
         slider.value = points;
     }
 
-    public void AddPoints(int points)
+    public void AddPoints(FoodItem foodItem)
     {
+        int points = foodItem.lycopene;
         slider.value = slider.value + points;
 
         if (confetti != null)

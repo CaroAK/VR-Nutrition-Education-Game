@@ -1548,6 +1548,7 @@ struct PokeThresholdDatumProperty_t367C8AA0927AD55629D9EF7297FCCEB814F6BB30  : p
 };
 struct PropertyAttribute_t5E0CB5A6CDA6E24CBD4FF26DE3B0C29D8BB54BF0  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
+	int32_t ___U3CorderU3Ek__BackingField;
 };
 struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 
 {
@@ -26087,7 +26088,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRTargetEvaluator_IsInstanceType_m7C3A70
 		Type_t* L_6 = ___0_evaluatorType;
 		NullCheck(L_6);
 		bool L_7;
-		L_7 = VirtualFuncInvoker0< bool >::Invoke(39, L_6);
+		L_7 = VirtualFuncInvoker0< bool >::Invoke(40, L_6);
 		if (L_7)
 		{
 			goto IL_0032;
@@ -26101,7 +26102,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRTargetEvaluator_IsInstanceType_m7C3A70
 		Type_t* L_10 = ___0_evaluatorType;
 		NullCheck(L_9);
 		bool L_11;
-		L_11 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(21, L_9, L_10);
+		L_11 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(22, L_9, L_10);
 		return L_11;
 	}
 
@@ -26228,7 +26229,7 @@ IL_0012:
 		L_9 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
 		NullCheck(L_9);
 		String_t* L_10;
-		L_10 = VirtualFuncInvoker0< String_t* >::Invoke(7, L_9);
+		L_10 = VirtualFuncInvoker0< String_t* >::Invoke(8, L_9);
 		NullCheck(L_8);
 		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_10);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_11 = L_8;
@@ -27696,7 +27697,7 @@ IL_0022_1:
 				XRTargetEvaluator_t5B05D5A70C86720DA2EF19C671D2E4A944F85187* L_7 = V_1;
 				NullCheck(L_6);
 				bool L_8;
-				L_8 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(110, L_6, L_7);
+				L_8 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(116, L_6, L_7);
 				if (!L_8)
 				{
 					goto IL_0037_1;

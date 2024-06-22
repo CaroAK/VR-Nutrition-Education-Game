@@ -1,11 +1,119 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="FoodItem" preserve="nothing"/>
 		<type fullname="HandAnimation" preserve="nothing"/>
 		<type fullname="PlayerManagerScript" preserve="nothing"/>
 		<type fullname="PointBar" preserve="nothing"/>
 	</assembly>
+	<assembly fullname="Meta.XR.BuildingBlocks">
+		<type fullname="AlertViewHUD" preserve="nothing"/>
+		<type fullname="EnableUnpremultipliedAlpha" preserve="nothing"/>
+		<type fullname="Meta.XR.BuildingBlocks.ControllerButtonsMapper" preserve="nothing"/>
+		<type fullname="Meta.XR.BuildingBlocks.PassthroughProjectionSurfaceBuildingBlock" preserve="nothing"/>
+		<type fullname="Meta.XR.BuildingBlocks.RoomMeshController" preserve="nothing"/>
+		<type fullname="Meta.XR.BuildingBlocks.RoomMeshEvent" preserve="nothing"/>
+		<type fullname="Meta.XR.BuildingBlocks.SharedSpatialAnchorCore" preserve="nothing"/>
+		<type fullname="Meta.XR.BuildingBlocks.SpatialAnchorCoreBuildingBlock" preserve="nothing"/>
+		<type fullname="Meta.XR.BuildingBlocks.SpatialAnchorLoaderBuildingBlock" preserve="nothing"/>
+		<type fullname="Meta.XR.BuildingBlocks.SpatialAnchorLocalStorageManagerBuildingBlock" preserve="nothing"/>
+		<type fullname="Meta.XR.BuildingBlocks.SpatialAnchorSpawnerBuildingBlock" preserve="nothing"/>
+		<type fullname="SharedSpatialAnchorErrorHandler" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="meta.xr.mrutilitykit">
+		<type fullname="FindSpawnPositions" preserve="nothing"/>
+		<type fullname="Meta.XR.MRUtilityKit.AnchorPrefabSpawner" preserve="nothing"/>
+		<type fullname="Meta.XR.MRUtilityKit.EffectMesh" preserve="nothing"/>
+		<type fullname="Meta.XR.MRUtilityKit.MRUK" preserve="nothing"/>
+		<type fullname="Meta.XR.MRUtilityKit.RoomGuardian" preserve="nothing"/>
+		<type fullname="Meta.XR.MRUtilityKit.SceneDebugger" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Meta.XR.MultiplayerBlocks.Shared">
+		<type fullname="Meta.XR.Locomotion.Teleporter.ArcTargeter" preserve="nothing"/>
+		<type fullname="Meta.XR.Locomotion.Teleporter.JoystickInput" preserve="nothing"/>
+		<type fullname="Meta.XR.Locomotion.Teleporter.Teleporter" preserve="nothing"/>
+		<type fullname="Meta.XR.Locomotion.Teleporter.TeleportTelegraph" preserve="nothing"/>
+		<type fullname="Meta.XR.MultiplayerBlocks.Shared.PlatformInit_" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Oculus.Interaction">
+		<type fullname="Oculus.Interaction.ActiveStateGroup" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.ActiveStateTracker" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.ControllerActiveState" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.GrabAPI.HandGrabAPI" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Grabbable" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.HandActiveState" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.HandGrab.HandGrabInteractable" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.HandGrab.HandGrabInteractor" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.HandGrab.HandGrabStateVisual" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.HandGrabGlow" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.HandJoint" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.HandPinchOffset" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.HandPointerPose" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.HandPokeLimiterVisual" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.HandPokeOvershootGlow" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.HandRayInteractorCursorVisual" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.HandRayPinchGlow" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.HandTransformScaler" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.HandVisual" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.HandWristOffset" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.IndexPinchSelector" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Input.Controller" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Input.Filter.HandFilter" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Input.Hand" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Input.HandRef" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Input.Hmd" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Input.JointsRadiusFeature" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Input.LastKnownGoodHand" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Input.SyntheticHand" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.InteractableColorVisual" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.InteractorActiveState" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.MaterialPropertyBlockEditor" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.PhysicsGrabbable" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.PokeInteractable" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.PokeInteractableVisual" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.PokeInteractor" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.RayInteractable" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.RayInteractor" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.RayInteractorPinchVisual" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.RoundedBoxProperties" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Surfaces.BoundsClipper" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Surfaces.ClippedPlaneSurface" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Surfaces.ColliderSurface" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Surfaces.PlaneSurface" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Throw.HandPoseInputDevice" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Throw.StandardVelocityCalculator" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Oculus.Interaction.OVR">
+		<type fullname="Oculus.Interaction.Input.FromOVRControllerDataSource" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Input.FromOVRHandDataSource" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Input.FromOVRHmdDataSource" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Input.HandSkeletonOVR" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Input.OVRCameraRigRef" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Input.TrackingToWorldTransformerOVR" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Input.Visuals.OVRControllerVisual" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.OVR.Input.OVRAxis2D" preserve="nothing"/>
+	</assembly>
 	<assembly fullname="Oculus.VR">
+		<type fullname="OVRCameraRig" preserve="nothing"/>
+		<type fullname="OVRControllerHelper" preserve="nothing"/>
+		<type fullname="OVREyeGaze" preserve="nothing"/>
+		<type fullname="OVRGazePointer" preserve="nothing"/>
+		<type fullname="OVRHand" preserve="nothing"/>
+		<type fullname="OVRHeadsetEmulator" preserve="nothing"/>
+		<type fullname="OVRManager" preserve="nothing"/>
+		<type fullname="OVRMesh" preserve="nothing"/>
+		<type fullname="OVRMeshRenderer" preserve="nothing"/>
+		<type fullname="OVRPassthroughLayer" preserve="nothing"/>
+		<type fullname="OVRRaycaster" preserve="nothing"/>
+		<type fullname="OVRRayHelper" preserve="nothing"/>
 		<type fullname="OVRRuntimeSettings" preserve="nothing"/>
+		<type fullname="OVRSceneAnchor" preserve="nothing"/>
+		<type fullname="OVRSceneManager" preserve="nothing"/>
+		<type fullname="OVRSceneModelLoader" preserve="nothing"/>
+		<type fullname="OVRScenePlaneMeshFilter" preserve="nothing"/>
+		<type fullname="OVRSkeleton" preserve="nothing"/>
+		<type fullname="OVRSkeletonRenderer" preserve="nothing"/>
+		<type fullname="OVRVirtualKeyboard" preserve="nothing"/>
+		<type fullname="UnityEngine.EventSystems.OVRInputModule" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
 		<type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="nothing"/>
@@ -18,6 +126,7 @@
 	<assembly fullname="Unity.TextMeshPro">
 		<type fullname="TMPro.TextMeshProUGUI" preserve="nothing"/>
 		<type fullname="TMPro.TMP_ColorGradient" preserve="nothing"/>
+		<type fullname="TMPro.TMP_Dropdown" preserve="nothing"/>
 		<type fullname="TMPro.TMP_FontAsset" preserve="nothing"/>
 		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
 		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>
@@ -109,10 +218,22 @@
 	</assembly>
 	<assembly fullname="UnityEngine.UI">
 		<type fullname="UnityEngine.EventSystems.EventSystem" preserve="nothing"/>
+		<type fullname="UnityEngine.EventSystems.EventTrigger" preserve="nothing"/>
+		<type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Button" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.ContentSizeFitter" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.LayoutElement" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.Mask" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.Scrollbar" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.ScrollRect" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Slider" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.Text" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.Toggle" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.ToggleGroup" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="nothing"/>
 	</assembly>
 </linker>
