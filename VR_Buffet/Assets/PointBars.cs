@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PointBars : MonoBehaviour
 {
@@ -13,7 +14,8 @@ public class PointBars : MonoBehaviour
     public Slider slider_sugar;
     public Slider slider_fat;
     public int weight = 0;
-    public Text plate;
+    public TMP_Text weightText;
+    public TMP_Text plate;
     [SerializeField] private ParticleSystem confetti;
 
 
@@ -48,13 +50,16 @@ public class PointBars : MonoBehaviour
             slider_fat.value += item.fat;
         }
         weight += item.amt;
-        plate.text += item.foodName;
+        weightText.text = weight + " g";
+        plate.text += item.foodName + "\n";
 
 
         if (confetti != null)
         {
             StartCoroutine(CelebratePoints());
         }
+
+        print("selected");
     }
 
     public void AddPoints(int points)
