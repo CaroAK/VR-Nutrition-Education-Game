@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class PointBars : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class PointBars : MonoBehaviour
     public int weight = 0;
     public TMP_Text weightText;
     public TMP_Text plate;
+    public ArrayList plateContents = new ArrayList();
     [SerializeField] private ParticleSystem confetti;
 
 
@@ -51,15 +53,61 @@ public class PointBars : MonoBehaviour
         }
         weight += item.amt;
         weightText.text = weight + " g";
-        plate.text += item.foodName + "\n";
+        plateContents.Add(item.foodName);
+        MakePlate();
 
 
         if (confetti != null)
         {
             StartCoroutine(CelebratePoints());
         }
+    }
 
-        print("selected");
+    private void MakePlate()
+    {
+        plate.text = "";
+        foreach (string foodName in plateContents)
+        {
+            plate.text += foodName + "\n";
+        }
+    }
+
+    public void RemoveItem(FoodItem item)
+    {
+        if (plateContents.Contains(item.foodName)) {
+            if (slider_lycopene != null)
+            {
+                slider_lycopene.value -= item.lycopene;
+            }
+            if (slider_lutein != null)
+            {
+                slider_lutein.value -= item.lutein;
+            }
+            if (slider_vite != null)
+            {
+                slider_vite.value -= item.vite;
+            }
+            if (slider_carotene != null)
+            {
+                slider_carotene.value -= item.carotene;
+            }
+            if (slider_fiber != null)
+            {
+                slider_fiber.value -= item.fiber;
+            }
+            if (slider_sugar != null)
+            {
+                slider_sugar.value -= item.sugar;
+            }
+            if (slider_fat != null)
+            {
+                slider_fat.value -= item.fat;
+            }
+            weight -= item.amt;
+            weightText.text = weight + " g";
+            plateContents.Remove(item.foodName);
+            MakePlate();
+        }
     }
 
     public void AddPoints(int points)
