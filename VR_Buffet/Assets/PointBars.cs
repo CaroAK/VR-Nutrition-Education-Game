@@ -7,114 +7,88 @@ using Unity.VisualScripting;
 
 public class PointBars : MonoBehaviour
 {
-    public Slider slider_lycopene;
-    public Slider slider_lutein;
-    public Slider slider_vite;
-    public Slider slider_carotene;
-    public Slider slider_fiber;
-    public Slider slider_sugar;
-    public Slider slider_fat;
-    public int weight = 0;
-    public TMP_Text weightText;
-    public TMP_Text plate;
-    public ArrayList plateContents = new ArrayList();
-    [SerializeField] private ParticleSystem confetti;
-
+    public Slider SliderLycopene;
+    public Slider SliderLutein;
+    public Slider SliderVite;
+    public Slider SliderCarotene;
+    public Slider SliderFiber;
+    public Slider SliderSugar;
+    public Slider SliderFat;
+    public GameObject LimitMSG;
+    public int Weight = 0;
+    public TMP_Text WeightText;
+    public TMP_Text Plate;
+    public List<string> PlateContents = new List<string>();
+    [SerializeField] private ParticleSystem Confetti;
+    public SoundManager soundManager;
 
     public void AddPoints(FoodItem item)
     {
-        if (slider_lycopene != null)
+        if (Weight + item.amt > 1000)
         {
-            slider_lycopene.value = slider_lycopene.value + item.lycopene;
+            StartCoroutine(ShowLimitMessage());
+            return;
         }
-        if (slider_lutein != null)
-        {
-            slider_lutein.value += slider_lutein.value + item.lutein;
-        }
-        if (slider_vite != null)
-        {
-            slider_vite.value += item.vite;
-        }
-        if (slider_carotene != null)
-        {
-            slider_carotene.value += item.carotene;
-        }
-        if (slider_fiber != null)
-        {
-            slider_fiber.value += item.fiber;
-        }
-        if (slider_sugar != null)
-        {
-            slider_sugar.value += item.sugar;
-        }
-        if (slider_fat != null)
-        {
-            slider_fat.value += item.fat;
-        }
-        weight += item.amt;
-        weightText.text = weight + " g";
-        plateContents.Add(item.foodName);
-        MakePlate();
 
 
-        if (confetti != null)
+        SliderLycopene.value += item.lycopene;
+        SliderLutein.value += item.lutein;
+        SliderVite.value += item.vite;
+        SliderCarotene.value += item.carotene;
+        SliderFiber.value += item.fiber;
+        SliderSugar.value += item.sugar;
+        SliderFat.value += item.fat;
+        Weight += item.amt;
+        PlateContents.Add(item.foodName);
+        UpdatePlate();
+        soundManager.PlaySelectSound();
+
+        if (Confetti != null)
         {
             StartCoroutine(CelebratePoints());
         }
     }
 
-    private void MakePlate()
+    private IEnumerator ShowLimitMessage()
     {
-        plate.text = "";
-        foreach (string foodName in plateContents)
+        LimitMSG.SetActive(true);
+        yield return new WaitForSeconds(5);
+        LimitMSG.SetActive(false);
+    }
+
+    private void UpdatePlate()
+    {
+        WeightText.text = Weight + " g";
+        Plate.text = "";
+        foreach (string foodName in PlateContents)
         {
-            plate.text += foodName + "\n";
+            Plate.text += foodName + "\n";
         }
     }
 
     public void RemoveItem(FoodItem item)
     {
-        if (plateContents.Contains(item.foodName)) {
-            if (slider_lycopene != null)
-            {
-                slider_lycopene.value -= item.lycopene;
-            }
-            if (slider_lutein != null)
-            {
-                slider_lutein.value -= item.lutein;
-            }
-            if (slider_vite != null)
-            {
-                slider_vite.value -= item.vite;
-            }
-            if (slider_carotene != null)
-            {
-                slider_carotene.value -= item.carotene;
-            }
-            if (slider_fiber != null)
-            {
-                slider_fiber.value -= item.fiber;
-            }
-            if (slider_sugar != null)
-            {
-                slider_sugar.value -= item.sugar;
-            }
-            if (slider_fat != null)
-            {
-                slider_fat.value -= item.fat;
-            }
-            weight -= item.amt;
-            weightText.text = weight + " g";
-            plateContents.Remove(item.foodName);
-            MakePlate();
+        if (PlateContents.Contains(item.foodName))
+        {
+            SliderLycopene.value -= item.lycopene;
+            SliderLutein.value -= item.lutein;
+            SliderVite.value -= item.vite;
+            SliderCarotene.value -= item.carotene;
+            SliderFiber.value -= item.fiber;
+            SliderSugar.value -= item.sugar;
+            SliderFat.value -= item.fat;
+            Weight -= item.amt;
+            PlateContents.Remove(item.foodName);
+            UpdatePlate();
+            soundManager.PlayUnselectSound();
         }
     }
 
     public void AddPoints(int points)
     {
-        slider_lutein.value += points;
+        SliderLutein.value += points;
 
-        if (confetti != null)
+        if (Confetti != null)
         {
             StartCoroutine(CelebratePoints());
         }
@@ -122,12 +96,12 @@ public class PointBars : MonoBehaviour
 
     private IEnumerator CelebratePoints()
     {
-        confetti.gameObject.SetActive(true);
-        confetti.Play();
+        Confetti.gameObject.SetActive(true);
+        Confetti.Play();
 
-        yield return new WaitForSeconds(confetti.main.duration);
+        yield return new WaitForSeconds(Confetti.main.duration);
 
-        confetti.Stop();
-        confetti.gameObject.SetActive(false);
+        Confetti.Stop();
+        Confetti.gameObject.SetActive(false);
     }
 }
