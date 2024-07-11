@@ -7,6 +7,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource Src;
     public AudioClip SelectClip;
     public AudioClip UnselectClip;
+    public AudioClip FinishClip;
 
     public void PlaySelectSound()
     {
@@ -17,6 +18,12 @@ public class SoundManager : MonoBehaviour
     public void PlayUnselectSound()
     {
         Src.clip = UnselectClip;
+        Src.Play();
+    }
+
+    public void PlayFinishSound()
+    {
+        Src.clip = FinishClip;
         Src.Play();
     }
 }

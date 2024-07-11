@@ -15,6 +15,8 @@ public class PointBars : MonoBehaviour
     public Slider SliderSugar;
     public Slider SliderFat;
     public GameObject LimitMSG;
+    public GameObject SugarMSG;
+    public GameObject FatMSG;
     public int Weight = 0;
     public TMP_Text WeightText;
     public TMP_Text Plate;
@@ -38,6 +40,17 @@ public class PointBars : MonoBehaviour
         SliderFiber.value += item.fiber;
         SliderSugar.value += item.sugar;
         SliderFat.value += item.fat;
+
+        if (SliderSugar.value > 14)
+        {
+            StartCoroutine(ShowSugarWarning());
+        }
+
+        if (SliderFat.value > 18)
+        {
+            StartCoroutine(ShowFatWarning());
+        }
+
         Weight += item.amt;
         PlateContents.Add(item.foodName);
         UpdatePlate();
@@ -54,6 +67,20 @@ public class PointBars : MonoBehaviour
         LimitMSG.SetActive(true);
         yield return new WaitForSeconds(5);
         LimitMSG.SetActive(false);
+    }
+
+    private IEnumerator ShowFatWarning()
+    {
+        FatMSG.SetActive(true);
+        yield return new WaitForSeconds(5);
+        FatMSG.SetActive(false);
+    }
+
+    private IEnumerator ShowSugarWarning()
+    {
+        SugarMSG.SetActive(true);
+        yield return new WaitForSeconds(5);
+        SugarMSG.SetActive(false);
     }
 
     private void UpdatePlate()
