@@ -41,15 +41,15 @@ public class PointBars : MonoBehaviour
         SliderSugar.value += item.sugar;
         SliderFat.value += item.fat;
 
-        if (SliderSugar.value > 14)
-        {
-            StartCoroutine(ShowSugarWarning());
-        }
+        //if (SliderSugar.value > 14)
+        //{
+        //    StartCoroutine(ShowSugarWarning());
+        //}
 
-        if (SliderFat.value > 18)
-        {
-            StartCoroutine(ShowFatWarning());
-        }
+        //if (SliderFat.value > 18)
+        //{
+        //    StartCoroutine(ShowFatWarning());
+        //}
 
         Weight += item.amt;
         PlateContents.Add(item.foodName);
