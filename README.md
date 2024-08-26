@@ -14,6 +14,11 @@ Developed in Unity3D and run on MetaQuest 2.
 
 This work was supported by the National Science Foundation, Research Experience for Undergraduates Award No. 2050532.
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/01998262-f3fa-48c2-ab49-b67b084e73fd" alt="IMG_9058" width="450" height="auto"/>
+  <img src="https://github.com/user-attachments/assets/57a6000e-b462-4139-bdb9-c7f8cbf28ee3" alt="IMG_8751" width="450" height="auto"/>
+</div>
+
 ## Sources
 
 Nutrition Data: https://fdc.nal.usda.gov
