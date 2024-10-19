@@ -2,6 +2,8 @@
 
 ## Links
 
+[Associated Research Publication](https://camps.aptaracorp.com//ACM_PMS/PMS/ACM/ISSCOMPANION24/19/3f47f66b-7ccc-11ef-ada9-16bb50361d1f/OUT/isscompanion24-19.pdf) (ISS '24)
+
 [Development Process](https://wolex.com/caroline-klein/)
 
 [Demo](https://youtu.be/yZbyB2nJct4)
